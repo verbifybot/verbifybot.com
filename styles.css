@@ -387,6 +387,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(calc(33.33% / 2));
 }
 
 .translation-demo {
@@ -787,6 +788,11 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
         gap: var(--spacing-2xl);
+    }
+    
+    .hero-visual {
+        justify-content: center;
+        transform: none;
     }
     
     .hero-title {
