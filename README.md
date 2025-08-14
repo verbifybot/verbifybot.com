@@ -2,17 +2,32 @@
 
 🤖 **Break Language Barriers Instantly!**
 
-This is the official landing page for VerbifyBot - a powerful Telegram bot that translates text messages, images, audio files, and forwarded posts in real-time.
+This is the official landing page for VerbifyBot - a powerful Telegram bot that translates text messages, images, audio files, forwarded posts, and documents in real-time.
 
-## 🌟 Features
+## 🌟 Website Features
 
 - **Modern Design**: Colorful, playful design that reflects the multilingual nature of the bot
 - **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
 - **Brand Integration**: Built around the VerbifyBot brand color (#E4571B)
 - **Interactive Elements**: Smooth animations, hover effects, and engaging user experience
+- **Internationalization**: Full multi-language support with 10 languages
 - **SEO Optimized**: Meta tags, structured data, and social media cards
 - **Accessibility**: ARIA labels, keyboard navigation, and focus management
 - **Performance**: Optimized loading, lazy images, and minimal dependencies
+
+## 🌍 Supported Languages
+
+The website supports full internationalization with the following languages:
+- 🇺🇸 **English** (en)
+- 🇪🇸 **Español** (es)
+- 🇫🇷 **Français** (fr)
+- 🇩🇪 **Deutsch** (de)
+- 🇮🇹 **Italiano** (it)
+- 🇵🇹 **Português** (pt)
+- 🇷🇺 **Русский** (ru)
+- 🇯🇵 **日本語** (ja)
+- 🇰🇷 **한국어** (ko)
+- 🇸🇦 **العربية** (ar)
 
 ## 🚀 Live Demo
 
@@ -23,14 +38,17 @@ Visit the live site: [https://verbifybot.com](https://verbifybot.com)
 - **HTML5**: Semantic markup with accessibility features
 - **CSS3**: Modern styling with CSS Grid, Flexbox, and custom properties
 - **Vanilla JavaScript**: Interactive features without external dependencies
+- **Internationalization**: Complete translation system with dynamic language switching
 - **GitHub Pages**: Static site hosting with custom domain support
 
 ## 📱 Bot Features Highlighted
 
-1. **Text Translation**: Instant translation of text messages
-2. **Image Translation**: OCR and translation of text in images
-3. **Audio Translation**: Speech-to-text and translation of voice messages
-4. **Forwarded Posts**: Translation of forwarded messages and channel posts
+1. **Text Translation**: Instant translation of text messages with high accuracy
+2. **Image Translation**: OCR and translation of text in images, photos, and screenshots
+3. **Audio Translation**: Speech-to-text and translation of voice messages in real-time
+4. **Forwarded Posts**: Translation of forwarded messages and channel posts seamlessly
+5. **Inline Mode**: Use VerbifyBot in any chat with inline queries (@verbifybot + text)
+6. **Document Translation**: Translate entire documents (TXT, MD, PDF, DOCX) with preserved formatting
 
 ## 🎨 Design System
 
@@ -48,13 +66,16 @@ Visit the live site: [https://verbifybot.com](https://verbifybot.com)
 
 ```
 verbifybot.com/
-├── index.html          # Main landing page
-├── styles.css          # Comprehensive styling
-├── script.js           # Interactive functionality
+├── index.html          # Main landing page with full internationalization
+├── styles.css          # Comprehensive styling with responsive design
+├── script.js           # Interactive functionality and language switching
+├── translations.js     # Complete translation system (10 languages)
 ├── logo.png           # VerbifyBot logo
+├── robots.txt         # Search engine directives
+├── sitemap.xml        # XML sitemap for SEO
 ├── _config.yml        # GitHub Pages configuration
 ├── .gitignore         # Git ignore rules
-└── README.md          # This file
+└── README.md          # This documentation
 ```
 
 ## 🚀 Deployment
@@ -159,14 +180,34 @@ verbifybot.com/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 🎨 Internationalization System
+
+The website features a comprehensive translation system:
+
+### Translation Features
+- **Dynamic Language Switching**: Real-time language switching without page reload
+- **Animated Greetings**: Rotating "Hello" in different languages on the hero section
+- **Complete UI Translation**: All interface elements are fully translated
+- **Language Persistence**: Selected language is remembered across sessions
+- **Fallback System**: Graceful fallback to English for missing translations
+
+### Translation Structure
+- **Modular Design**: Translations organized by page sections (nav, hero, features, etc.)
+- **Nested Objects**: Hierarchical structure for complex UI elements
+- **Consistent Keys**: Standardized translation keys across all languages
+- **Easy Maintenance**: Simple JSON structure for easy updates and additions
+
 ## 📞 Support
 
 - **Telegram Bot**: [@verbifybot](https://t.me/verbifybot)
 - **Email**: support@verbifybot.com
-- **Issues**: [GitHub Issues](https://github.com/yourusername/verbifybot.com/issues)
+- **Website**: [https://verbifybot.com](https://verbifybot.com)
 
 ## 🎯 Roadmap
 
+- [x] Complete internationalization system (10 languages)
+- [x] Document translation feature
+- [x] Inline mode functionality
 - [ ] Add more language examples in the hero section
 - [ ] Implement dark mode toggle
 - [ ] Add testimonials section
@@ -178,4 +219,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for global communication**
 
-*VerbifyBot - Breaking language barriers, one message at a time.*
+*VerbifyBot - The only translation bot you need.*
