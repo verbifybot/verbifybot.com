@@ -1,6 +1,154 @@
 // VerbifyBot Landing Page JavaScript
 
+// Language switching functionality
+let currentLanguage = 'en';
+
+// Detect browser language
+function detectLanguage() {
+    const browserLang = navigator.language || navigator.userLanguage;
+    const langCode = browserLang.split('-')[0].toLowerCase();
+    
+    // Check if we support this language
+    if (translations && translations[langCode]) {
+        return langCode;
+    }
+    
+    return 'en'; // Default to English
+}
+
+// Update page content with translations
+function updateContent(lang) {
+    if (!translations || !translations[lang]) {
+        console.warn('Translation not found for language:', lang);
+        return;
+    }
+    
+    const t = translations[lang];
+    
+    // Update all elements with data-i18n attributes
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const translation = getNestedTranslation(t, key);
+        
+        if (translation) {
+            // Handle special cases for elements with HTML content
+            if (key === 'hero.title') {
+                const instantlySpan = element.querySelector('.highlight');
+                if (instantlySpan) {
+                    element.innerHTML = translation + ' <span class="highlight" data-i18n="hero.instantly">' + t.hero.instantly + '</span>';
+                } else {
+                    element.textContent = translation;
+                }
+            } else {
+                element.textContent = translation;
+            }
+        }
+    });
+    
+    // Update current language display
+    const currentLangElement = document.querySelector('.current-lang');
+    if (currentLangElement && languageCodes[lang]) {
+        currentLangElement.textContent = languageCodes[lang];
+    }
+    
+    // Update active language option
+    document.querySelectorAll('.lang-option').forEach(option => {
+        option.classList.remove('active');
+        if (option.getAttribute('data-lang') === lang) {
+            option.classList.add('active');
+        }
+    });
+    
+    // Update document language attribute
+    document.documentElement.lang = lang;
+    
+    // Update page title and meta description
+    updateMetaTags(lang);
+    
+    currentLanguage = lang;
+    
+    // Store language preference
+    localStorage.setItem('verbifybot-language', lang);
+}
+
+// Get nested translation value
+function getNestedTranslation(obj, key) {
+    return key.split('.').reduce((o, k) => o && o[k], obj);
+}
+
+// Update meta tags for SEO
+function updateMetaTags(lang) {
+    if (!translations || !translations[lang]) return;
+    
+    const t = translations[lang];
+    
+    // Update title
+    document.title = `VerbifyBot - ${t.hero.slogan}`;
+    
+    // Update meta description
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.content = `VerbifyBot - ${t.hero.slogan}! ${t.hero.description}`;
+    }
+    
+    // Update Open Graph tags
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+        ogTitle.content = `VerbifyBot - ${t.hero.slogan}`;
+    }
+    
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) {
+        ogDesc.content = `${t.hero.slogan}! ${t.hero.description}`;
+    }
+    
+    // Update Twitter Card tags
+    const twitterTitle = document.querySelector('meta[property="twitter:title"]');
+    if (twitterTitle) {
+        twitterTitle.content = `VerbifyBot - ${t.hero.slogan}`;
+    }
+    
+    const twitterDesc = document.querySelector('meta[property="twitter:description"]');
+    if (twitterDesc) {
+        twitterDesc.content = `${t.hero.slogan}! ${t.hero.description}`;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize language
+    const savedLanguage = localStorage.getItem('verbifybot-language');
+    const initialLanguage = savedLanguage || detectLanguage();
+    updateContent(initialLanguage);
+    
+    // Language switcher functionality
+    const languageToggle = document.querySelector('.language-toggle');
+    const languageDropdown = document.querySelector('.language-dropdown');
+    const langOptions = document.querySelectorAll('.lang-option');
+    
+    if (languageToggle && languageDropdown) {
+        languageToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            languageToggle.classList.toggle('active');
+            languageDropdown.classList.toggle('active');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function() {
+            languageToggle.classList.remove('active');
+            languageDropdown.classList.remove('active');
+        });
+        
+        // Handle language selection
+        langOptions.forEach(option => {
+            option.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const selectedLang = this.getAttribute('data-lang');
+                updateContent(selectedLang);
+                languageToggle.classList.remove('active');
+                languageDropdown.classList.remove('active');
+            });
+        });
+    }
     // Mobile menu toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
