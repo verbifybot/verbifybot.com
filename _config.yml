@@ -1,0 +1,44 @@
+# GitHub Pages Configuration for VerbifyBot
+title: VerbifyBot - Instant Translation for Telegram
+description: Break language barriers instantly! Translate text, images, audio, and forwarded posts in Telegram with VerbifyBot.
+url: "https://verbifybot.com"
+baseurl: ""
+
+# SEO and Social Media
+author: VerbifyBot Team
+twitter:
+  username: verbifybot
+  card: summary_large_image
+
+# GitHub Pages settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
+  - node_modules/
+  - package*.json
+
+# Include files
+include:
+  - _headers
+  - _redirects
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Sass settings
+sass:
+  style: compressed
+
+# Collections and defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /logo.png
