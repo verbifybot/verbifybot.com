@@ -69,7 +69,7 @@ const translations = {
             tryNow: "Try Now",
             contactBot: "Contact Bot",
             emailSupport: "Email Support",
-            copyright: "© 2024 VerbifyBot. All rights reserved."
+            copyright: "© 2025 VerbifyBot. All rights reserved."
         }
     },
     es: {
@@ -141,7 +141,7 @@ const translations = {
             tryNow: "Probar Ahora",
             contactBot: "Contactar Bot",
             emailSupport: "Soporte por Email",
-            copyright: "© 2024 VerbifyBot. Todos los derechos reservados."
+            copyright: "© 2025 VerbifyBot. Todos los derechos reservados."
         }
     },
     fr: {
@@ -213,7 +213,7 @@ const translations = {
             tryNow: "Essayer Maintenant",
             contactBot: "Contacter le Bot",
             emailSupport: "Support Email",
-            copyright: "© 2024 VerbifyBot. Tous droits réservés."
+            copyright: "© 2025 VerbifyBot. Tous droits réservés."
         }
     },
     de: {
@@ -285,7 +285,7 @@ const translations = {
             tryNow: "Jetzt Ausprobieren",
             contactBot: "Bot Kontaktieren",
             emailSupport: "E-Mail Support",
-            copyright: "© 2024 VerbifyBot. Alle Rechte vorbehalten."
+            copyright: "© 2025 VerbifyBot. Alle Rechte vorbehalten."
         }
     },
     it: {
@@ -357,7 +357,7 @@ const translations = {
             tryNow: "Prova Ora",
             contactBot: "Contatta Bot",
             emailSupport: "Supporto Email",
-            copyright: "© 2024 VerbifyBot. Tutti i diritti riservati."
+            copyright: "© 2025 VerbifyBot. Tutti i diritti riservati."
         }
     },
     pt: {
@@ -429,7 +429,7 @@ const translations = {
             tryNow: "Experimente Agora",
             contactBot: "Contatar Bot",
             emailSupport: "Suporte por Email",
-            copyright: "© 2024 VerbifyBot. Todos os direitos reservados."
+            copyright: "© 2025 VerbifyBot. Todos os direitos reservados."
         }
     },
     ru: {
@@ -501,7 +501,7 @@ const translations = {
             tryNow: "Попробовать Сейчас",
             contactBot: "Связаться с Ботом",
             emailSupport: "Поддержка Email",
-            copyright: "© 2024 VerbifyBot. Все права защищены."
+            copyright: "© 2025 VerbifyBot. Все права защищены."
         }
     },
     ja: {
@@ -573,7 +573,7 @@ const translations = {
             tryNow: "今すぐ試す",
             contactBot: "ボットに連絡",
             emailSupport: "メールサポート",
-            copyright: "© 2024 VerbifyBot. 全著作権所有。"
+            copyright: "© 2025 VerbifyBot. 全著作権所有。"
         }
     },
     ko: {
@@ -645,7 +645,7 @@ const translations = {
             tryNow: "지금 시도",
             contactBot: "봇 연락",
             emailSupport: "이메일 지원",
-            copyright: "© 2024 VerbifyBot. 모든 권리 보유."
+            copyright: "© 2025 VerbifyBot. 모든 권리 보유."
         }
     },
     ar: {
@@ -717,7 +717,7 @@ const translations = {
             tryNow: "جرب الآن",
             contactBot: "اتصل بالبوت",
             emailSupport: "دعم البريد الإلكتروني",
-            copyright: "© 2024 VerbifyBot. جميع الحقوق محفوظة."
+            copyright: "© 2025 VerbifyBot. جميع الحقوق محفوظة."
         }
     }
 };
