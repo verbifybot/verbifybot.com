@@ -146,6 +146,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateContent(selectedLang);
                 languageToggle.classList.remove('active');
                 languageDropdown.classList.remove('active');
+                
+                // Close mobile menu if open
+                if (navLinks && mobileMenuToggle) {
+                    navLinks.classList.remove('active');
+                    mobileMenuToggle.classList.remove('active');
+                }
             });
         });
     }
