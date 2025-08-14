@@ -923,10 +923,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    
     .mobile-menu-toggle {
         display: flex !important;
     }
