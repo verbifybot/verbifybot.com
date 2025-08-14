@@ -145,6 +145,10 @@ body {
     width: 100%;
 }
 
+.nav-link:focus::after {
+    width: 0;
+}
+
 .nav-cta {
     background: var(--primary-orange);
     color: var(--white);
