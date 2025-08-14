@@ -326,15 +326,15 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(animateTranslationDemo, 2000);
     setInterval(animateTranslationDemo, 8000);
 
-    // Parallax effect for hero section
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const parallax = scrolled * 0.5;
-            hero.style.transform = `translateY(${parallax}px)`;
-        });
-    }
+    // Parallax effect for hero section - REMOVED to prevent overlay issues
+    // const hero = document.querySelector('.hero');
+    // if (hero) {
+    //     window.addEventListener('scroll', function() {
+    //         const scrolled = window.pageYOffset;
+    //         const parallax = scrolled * 0.5;
+    //         hero.style.transform = `translateY(${parallax}px)`;
+    //     });
+    // }
 
     // Click tracking for analytics (placeholder)
     const trackableElements = document.querySelectorAll('[href*="t.me/verbifybot"]');
