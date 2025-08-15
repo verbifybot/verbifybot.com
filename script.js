@@ -1,5 +1,148 @@
 // VerbifyBot Landing Page JavaScript
 
+// Google Analytics Event Tracking Functions
+function trackCTAClick(buttonElement, location) {
+    const buttonText = buttonElement.textContent.trim();
+    const href = buttonElement.href;
+    
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'cta_click', {
+            event_category: 'engagement',
+            event_label: 'telegram_bot',
+            button_location: location,
+            button_text: buttonText,
+            link_url: href,
+            user_language: currentLanguage,
+            value: 1
+        });
+        
+        // Enhanced tracking for conversion funnel
+        gtag('event', 'conversion_step', {
+            event_category: 'conversion',
+            step_name: 'cta_clicked',
+            step_number: 1,
+            button_location: location,
+            user_language: currentLanguage
+        });
+    }
+}
+
+function trackLanguageChange(fromLang, toLang, method = 'manual') {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'language_change', {
+            event_category: 'localization',
+            from_language: fromLang,
+            to_language: toLang,
+            change_method: method,
+            value: 1
+        });
+        
+        // Track language preference for segmentation
+        gtag('event', 'user_preference', {
+            event_category: 'personalization',
+            preference_type: 'language',
+            preference_value: toLang
+        });
+    }
+}
+
+function trackNavigation(linkText, targetSection, isSmooth = false) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'navigation_click', {
+            event_category: 'navigation',
+            link_text: linkText,
+            target_section: targetSection,
+            navigation_type: isSmooth ? 'smooth_scroll' : 'direct_link',
+            user_language: currentLanguage,
+            value: 1
+        });
+    }
+}
+
+// Scroll depth tracking
+let scrollDepthTracked = {
+    25: false,
+    50: false,
+    75: false,
+    100: false
+};
+
+function trackScrollDepth() {
+    const scrollPercent = Math.round(
+        (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+    );
+    
+    [25, 50, 75, 100].forEach(threshold => {
+        if (scrollPercent >= threshold && !scrollDepthTracked[threshold]) {
+            scrollDepthTracked[threshold] = true;
+            
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'scroll', {
+                    event_category: 'engagement',
+                    scroll_depth: threshold,
+                    page_location: window.location.href,
+                    user_language: currentLanguage,
+                    value: threshold / 25 // Progressive value: 1, 2, 3, 4
+                });
+                
+                // Track high engagement
+                if (threshold >= 75) {
+                    gtag('event', 'high_engagement', {
+                        event_category: 'engagement',
+                        engagement_type: 'deep_scroll',
+                        engagement_value: threshold,
+                        user_language: currentLanguage
+                    });
+                }
+            }
+        }
+    });
+}
+
+// Time on page tracking
+let timeOnPageTracked = {
+    30: false,
+    60: false,
+    120: false,
+    300: false
+};
+
+function trackTimeOnPage() {
+    const startTime = Date.now();
+    
+    setInterval(() => {
+        const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+        
+        [30, 60, 120, 300].forEach(threshold => {
+            if (timeSpent >= threshold && !timeOnPageTracked[threshold]) {
+                timeOnPageTracked[threshold] = true;
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'time_on_page', {
+                        event_category: 'engagement',
+                        time_threshold: threshold,
+                        page_location: window.location.href,
+                        user_language: currentLanguage,
+                        value: threshold / 30
+                    });
+                }
+            }
+        });
+    }, 5000); // Check every 5 seconds
+}
+
+function trackFeatureInteraction(featureType, interactionType) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'feature_interaction', {
+            event_category: 'engagement',
+            feature_type: featureType,
+            interaction_type: interactionType, // hover, click, view
+            user_language: currentLanguage,
+            value: 1
+        });
+    }
+}
+
 // Language switching functionality
 let currentLanguage = 'en';
 
@@ -65,6 +208,11 @@ function updateContent(lang) {
     // Update page title and meta description
     updateMetaTags(lang);
     
+    // Track language change if it's different from current
+    if (currentLanguage !== lang) {
+        trackLanguageChange(currentLanguage, lang, 'manual');
+    }
+    
     currentLanguage = lang;
     
     // Store language preference
@@ -118,7 +266,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize language
     const savedLanguage = localStorage.getItem('verbifybot-language');
     const initialLanguage = savedLanguage || detectLanguage();
+    
+    // Track auto-detected language if different from saved
+    if (!savedLanguage && initialLanguage !== 'en') {
+        trackLanguageChange('en', initialLanguage, 'auto_detect');
+    }
+    
     updateContent(initialLanguage);
+    
+    // Initialize time tracking
+    trackTimeOnPage();
     
     // Language switcher functionality
     const languageToggle = document.querySelector('.language-toggle');
@@ -166,13 +323,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Smooth scrolling for navigation links
+    // Smooth scrolling for navigation links with tracking
     const navLinksElements = document.querySelectorAll('a[href^="#"]');
     navLinksElements.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
+            const linkText = this.textContent.trim();
+            
+            // Track navigation click
+            trackNavigation(linkText, targetId.replace('#', ''), true);
             
             if (targetSection) {
                 const headerHeight = document.querySelector('.header').offsetHeight;
@@ -192,12 +353,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Header scroll effect
+    // Header scroll effect with scroll depth tracking
     const header = document.querySelector('.header');
     let lastScrollTop = 0;
     
     window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Track scroll depth
+        trackScrollDepth();
         
         if (scrollTop > 100) {
             header.style.background = 'rgba(255, 255, 255, 0.98)';
@@ -262,11 +426,20 @@ document.addEventListener('DOMContentLoaded', function() {
         setInterval(rotateGreeting, 2000);
     }
 
-    // Button hover effects
+    // Button hover effects with engagement tracking
     const ctaButtons = document.querySelectorAll('.cta-button');
     ctaButtons.forEach(button => {
         button.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-3px)';
+            
+            // Track button hover for engagement
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'button_hover', {
+                    event_category: 'engagement',
+                    button_type: this.classList.contains('primary') ? 'primary' : 'secondary',
+                    user_language: currentLanguage
+                });
+            }
         });
         
         button.addEventListener('mouseleave', function() {
@@ -274,15 +447,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Feature card hover effects
+    // Feature card hover effects with tracking
     const featureCards = document.querySelectorAll('.feature-card');
     featureCards.forEach(card => {
+        const featureType = card.getAttribute('data-feature') || 'unknown';
+        
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-8px) scale(1.02)';
+            trackFeatureInteraction(featureType, 'hover');
         });
         
         card.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0) scale(1)';
+        });
+        
+        card.addEventListener('click', function() {
+            trackFeatureInteraction(featureType, 'click');
         });
     });
 
@@ -342,15 +522,31 @@ document.addEventListener('DOMContentLoaded', function() {
     //     });
     // }
 
-    // Click tracking for analytics (placeholder)
+    // CTA Button tracking with location-specific labels
     const trackableElements = document.querySelectorAll('[href*="t.me/verbifybot"]');
     trackableElements.forEach(element => {
         element.addEventListener('click', function() {
-            // Placeholder for analytics tracking
-            console.log('VerbifyBot link clicked:', this.href);
+            let location = 'unknown';
             
-            // You can add Google Analytics, Facebook Pixel, or other tracking here
-            // Example: gtag('event', 'click', { event_category: 'CTA', event_label: 'Add to Telegram' });
+            // Determine button location
+            if (element.classList.contains('nav-cta')) {
+                location = 'header';
+            } else if (element.closest('.hero-cta')) {
+                if (element.classList.contains('primary')) {
+                    location = 'hero_primary';
+                } else {
+                    location = 'hero_secondary';
+                }
+            } else if (element.closest('.cta-section')) {
+                location = 'bottom_cta';
+            } else if (element.closest('.footer')) {
+                location = 'footer';
+            }
+            
+            // Track the CTA click
+            trackCTAClick(this, location);
+            
+            console.log('VerbifyBot CTA clicked:', location, this.href);
         });
     });
 
@@ -468,15 +664,61 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', createRipple);
     });
 
+    // Google Analytics Debug Functions
+    window.testGoogleAnalytics = function() {
+        console.log('🔍 Testing Google Analytics Events...');
+        
+        if (typeof gtag === 'undefined') {
+            console.error('❌ Google Analytics not loaded!');
+            return;
+        }
+        
+        console.log('✅ Google Analytics loaded successfully');
+        
+        // Test CTA tracking
+        console.log('📊 Testing CTA click tracking...');
+        const testButton = document.querySelector('.cta-button');
+        if (testButton) {
+            trackCTAClick(testButton, 'test');
+            console.log('✅ CTA click event sent');
+        }
+        
+        // Test language tracking
+        console.log('📊 Testing language change tracking...');
+        trackLanguageChange('en', 'es', 'test');
+        console.log('✅ Language change event sent');
+        
+        // Test navigation tracking
+        console.log('📊 Testing navigation tracking...');
+        trackNavigation('Test Link', 'test_section', true);
+        console.log('✅ Navigation event sent');
+        
+        // Test feature interaction
+        console.log('📊 Testing feature interaction tracking...');
+        trackFeatureInteraction('text', 'test');
+        console.log('✅ Feature interaction event sent');
+        
+        // Test scroll tracking
+        console.log('📊 Testing scroll depth tracking...');
+        trackScrollDepth();
+        console.log('✅ Scroll depth event sent');
+        
+        console.log('🎉 All Google Analytics tests completed!');
+        console.log('📈 Check your GA4 Real-time reports to see the events');
+    };
+    
     // Console welcome message
     console.log(`
     🤖 VerbifyBot Landing Page
     ========================
     
-    Welcome to VerbifyBot! 
+    Welcome to VerbifyBot!
     Break language barriers instantly with our Telegram bot.
     
     Add @verbifybot to get started!
+    
+    📊 Google Analytics Tracking Active
+    🔍 Run testGoogleAnalytics() to test all events
     
     Built with ❤️ for global communication
     `);
