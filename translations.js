@@ -1,6 +1,10 @@
 // VerbifyBot Translations
 const translations = {
     en: {
+        meta: {
+            title: "VerbifyBot - The Only Translation Bot You Need",
+            description: "VerbifyBot translates text messages, images, audio files, and forwarded posts in Telegram. Connect with anyone, anywhere, in any language."
+        },
         nav: {
             features: "Features",
             howItWorks: "How It Works",
@@ -73,6 +77,10 @@ const translations = {
         }
     },
     es: {
+        meta: {
+            title: "VerbifyBot - El Único Bot de Traducción que Necesitas",
+            description: "VerbifyBot traduce mensajes de texto, imágenes, archivos de audio y publicaciones reenviadas en Telegram. Conéctate con cualquier persona, en cualquier lugar, en cualquier idioma."
+        },
         nav: {
             features: "Características",
             howItWorks: "Cómo Funciona",
@@ -145,6 +153,10 @@ const translations = {
         }
     },
     fr: {
+        meta: {
+            title: "VerbifyBot - Le Seul Bot de Traduction Dont Vous Avez Besoin",
+            description: "VerbifyBot traduit les messages texte, images, fichiers audio et publications transférées dans Telegram. Connectez-vous avec n'importe qui, n'importe où, dans n'importe quelle langue."
+        },
         nav: {
             features: "Fonctionnalités",
             howItWorks: "Comment Ça Marche",
@@ -217,6 +229,10 @@ const translations = {
         }
     },
     de: {
+        meta: {
+            title: "VerbifyBot - Der Einzige Übersetzungsbot, den Sie brauchen",
+            description: "VerbifyBot übersetzt Textnachrichten, Bilder, Audiodateien und weitergeleitete Beiträge in Telegram. Verbinden Sie sich mit jedem, überall, in jeder Sprache."
+        },
         nav: {
             features: "Funktionen",
             howItWorks: "Wie es Funktioniert",
@@ -289,6 +305,10 @@ const translations = {
         }
     },
     it: {
+        meta: {
+            title: "VerbifyBot - L'Unico Bot di Traduzione di Cui Hai Bisogno",
+            description: "VerbifyBot traduce messaggi di testo, immagini, file audio e post inoltrati in Telegram. Connettiti con chiunque, ovunque, in qualsiasi lingua."
+        },
         nav: {
             features: "Caratteristiche",
             howItWorks: "Come Funziona",
@@ -361,34 +381,38 @@ const translations = {
         }
     },
     pt: {
+        meta: {
+            title: "VerbifyBot - O Bot de Tradução Essencial para Telegram",
+            description: "Traduza texto, imagens, áudio e posts encaminhados no Telegram instantaneamente. Quebre as barreiras linguísticas com o VerbifyBot."
+        },
         nav: {
             features: "Recursos",
             howItWorks: "Como Funciona",
             addToTelegram: "Adicionar ao Telegram"
         },
         hero: {
-            title: "Quebre as Barreiras do Idioma",
+            title: "Quebre as Barreiras Idiomáticas",
             instantly: "Instantaneamente",
             slogan: "O único bot de tradução que você precisa",
-            description: "VerbifyBot traduz mensagens de texto, imagens, arquivos de áudio e posts encaminhados no Telegram. Conecte-se com qualquer pessoa, em qualquer lugar, em qualquer idioma."
+            description: "O VerbifyBot traduz mensagens de texto, imagens, áudio e posts encaminhados no Telegram. Conecte-se com qualquer pessoa, em qualquer lugar e em qualquer idioma."
         },
         cta: {
             addBot: "Adicionar @verbifybot",
             learnHow: "Saiba Como",
-            title: "Pronto para Quebrar as Barreiras do Idioma?",
-            description: "Junte-se a milhares de usuários que já estão se conectando através de idiomas com VerbifyBot",
-            startUsing: "Comece a Usar VerbifyBot Agora"
+            title: "Pronto para Quebrar as Barreiras Idiomáticas?",
+            description: "Junte-se a milhares de usuários que já estão se comunicando entre idiomas com o VerbifyBot.",
+            startUsing: "Comece a Usar o VerbifyBot Agora"
         },
         features: {
-            title: "Recursos Poderosos de Tradução",
-            description: "VerbifyBot lida com todos os tipos de conteúdo com precisão e velocidade",
+            title: "Recursos de Tradução Poderosos",
+            description: "O VerbifyBot processa todos os tipos de conteúdo com precisão e rapidez.",
             text: {
                 title: "Mensagens de Texto",
-                description: "Traduza instantaneamente qualquer mensagem de texto para seu idioma preferido com alta precisão."
+                description: "Traduza qualquer mensagem de texto para o seu idioma de preferência instantaneamente e com alta precisão."
             },
             image: {
-                title: "Imagens e Capturas",
-                description: "Extraia e traduza automaticamente texto de imagens, fotos e capturas de tela."
+                title: "Imagens e Capturas de Tela",
+                description: "Extraia e traduza texto de imagens, fotos e capturas de tela automaticamente."
             },
             audio: {
                 title: "Mensagens de Voz",
@@ -396,43 +420,47 @@ const translations = {
             },
             forward: {
                 title: "Posts Encaminhados",
-                description: "Traduza mensagens encaminhadas e posts de canais e grupos perfeitamente."
+                description: "Traduza mensagens e posts encaminhados de canais e grupos de forma integrada."
             },
             inline: {
                 title: "Modo Inline",
-                description: "Use VerbifyBot em qualquer chat com consultas inline. Digite @verbifybot e seu texto para traduzir instantaneamente."
+                description: "Use o VerbifyBot em qualquer conversa com consultas inline. Digite @verbifybot e seu texto para traduzir instantaneamente."
             },
             documents: {
                 title: "Tradução de Documentos",
-                description: "Traduza documentos inteiros incluindo arquivos TXT, MD, PDF e DOCX com formatação preservada."
+                description: "Traduza documentos inteiros, incluindo arquivos TXT, MD, PDF e DOCX, mantendo a formatação."
             }
         },
         howItWorks: {
             title: "Como Funciona",
-            description: "Comece com VerbifyBot em apenas três passos simples",
+            description: "Comece a usar o VerbifyBot em apenas três passos simples.",
             step1: {
-                title: "Adicionar o Bot",
+                title: "Adicione o Bot",
                 description: "Clique no botão abaixo ou procure por @verbifybot no Telegram e inicie uma conversa."
             },
             step2: {
-                title: "Envie Seu Conteúdo",
-                description: "Envie qualquer texto, imagem, áudio ou encaminhe um post para o bot. Funciona com todos os tipos de conteúdo."
+                title: "Envie seu Conteúdo",
+                description: "Envie qualquer texto, imagem, áudio ou encaminhe um post para o bot. Ele funciona com todos os tipos de conteúdo."
             },
             step3: {
-                title: "Obtenha a Tradução",
-                description: "Receba traduções instantâneas e precisas em seu idioma preferido. É assim tão simples!"
+                title: "Receba a Tradução",
+                description: "Receba traduções instantâneas e precisas no seu idioma de preferência. É simples assim!"
             }
         },
         footer: {
             product: "Produto",
             support: "Suporte",
             tryNow: "Experimente Agora",
-            contactBot: "Contatar Bot",
-            emailSupport: "Suporte por Email",
+            contactBot: "Contato",
+            emailSupport: "Suporte por E-mail",
             copyright: "© 2025 VerbifyBot. Todos os direitos reservados."
         }
     },
     ru: {
+        meta: {
+            title: "VerbifyBot - Единственный бот для перевода, который вам нужен",
+            description: "VerbifyBot переводит текстовые сообщения, изображения, аудиофайлы и пересланные посты в Telegram. Общайтесь с кем угодно, где угодно, на любом языке."
+        },
         nav: {
             features: "Возможности",
             howItWorks: "Как Это Работает",
@@ -498,185 +526,45 @@ const translations = {
         footer: {
             product: "Продукт",
             support: "Поддержка",
-            tryNow: "Попробовать Сейчас",
-            contactBot: "Связаться с Ботом",
-            emailSupport: "Поддержка Email",
+            tryNow: "Попробовать сейчас",
+            contactBot: "Связаться с ботом",
+            emailSupport: "Поддержка по электронной почте",
             copyright: "© 2025 VerbifyBot. Все права защищены."
         }
     },
-    ja: {
-        nav: {
-            features: "機能",
-            howItWorks: "使い方",
-            addToTelegram: "Telegramに追加"
-        },
-        hero: {
-            title: "言語の壁を打ち破る",
-            instantly: "瞬時に",
-            slogan: "必要な唯一の翻訳ボット",
-            description: "VerbifyBotはTelegramでテキストメッセージ、画像、音声ファイル、転送された投稿を翻訳します。誰とでも、どこでも、どんな言語でもつながりましょう。"
-        },
-        cta: {
-            addBot: "@verbifybotを追加",
-            learnHow: "使い方を学ぶ",
-            title: "言語の壁を打ち破る準備はできましたか？",
-            description: "VerbifyBotで既に言語を超えてつながっている何千ものユーザーに参加しましょう",
-            startUsing: "今すぐVerbifyBotを使い始める"
-        },
-        features: {
-            title: "強力な翻訳機能",
-            description: "VerbifyBotは精度とスピードであらゆるタイプのコンテンツを処理します",
-            text: {
-                title: "テキストメッセージ",
-                description: "高精度で任意のテキストメッセージを好みの言語に瞬時に翻訳します。"
-            },
-            image: {
-                title: "画像とスクリーンショット",
-                description: "画像、写真、スクリーンショットからテキストを自動的に抽出して翻訳します。"
-            },
-            audio: {
-                title: "音声メッセージ",
-                description: "音声をテキストに変換し、音声メッセージをリアルタイムで翻訳します。"
-            },
-            forward: {
-                title: "転送された投稿",
-                description: "チャンネルやグループから転送されたメッセージや投稿をシームレスに翻訳します。"
-            },
-            inline: {
-                title: "インラインモード",
-                description: "インラインクエリでVerbifyBotを任意のチャットで使用します。@verbifybotとテキストを入力して瞬時に翻訳します。"
-            },
-            documents: {
-                title: "文書翻訳",
-                description: "フォーマットを保持してTXT、MD、PDF、DOCXファイルを含む文書全体を翻訳します。"
-            }
-        },
-        howItWorks: {
-            title: "使い方",
-            description: "たった3つの簡単なステップでVerbifyBotを始めましょう",
-            step1: {
-                title: "ボットを追加",
-                description: "下のボタンをクリックするか、Telegramで@verbifybotを検索して会話を始めてください。"
-            },
-            step2: {
-                title: "コンテンツを送信",
-                description: "任意のテキスト、画像、音声を送信するか、投稿をボットに転送してください。すべてのコンテンツタイプで動作します。"
-            },
-            step3: {
-                title: "翻訳を取得",
-                description: "好みの言語で瞬時に正確な翻訳を受け取ります。とても簡単です！"
-            }
-        },
-        footer: {
-            product: "製品",
-            support: "サポート",
-            tryNow: "今すぐ試す",
-            contactBot: "ボットに連絡",
-            emailSupport: "メールサポート",
-            copyright: "© 2025 VerbifyBot. 全著作権所有。"
-        }
-    },
-    ko: {
-        nav: {
-            features: "기능",
-            howItWorks: "작동 방식",
-            addToTelegram: "텔레그램에 추가"
-        },
-        hero: {
-            title: "언어 장벽을 깨뜨리세요",
-            instantly: "즉시",
-            slogan: "필요한 유일한 번역 봇",
-            description: "VerbifyBot은 텔레그램에서 텍스트 메시지, 이미지, 오디오 파일, 전달된 게시물을 번역합니다. 누구와든, 어디서든, 어떤 언어로든 연결하세요."
-        },
-        cta: {
-            addBot: "@verbifybot 추가",
-            learnHow: "방법 알아보기",
-            title: "언어 장벽을 깨뜨릴 준비가 되셨나요?",
-            description: "VerbifyBot으로 이미 언어를 넘나들며 연결되고 있는 수천 명의 사용자에 합류하세요",
-            startUsing: "지금 VerbifyBot 사용 시작하기"
-        },
-        features: {
-            title: "강력한 번역 기능",
-            description: "VerbifyBot은 정확성과 속도로 모든 유형의 콘텐츠를 처리합니다",
-            text: {
-                title: "텍스트 메시지",
-                description: "높은 정확도로 모든 텍스트 메시지를 선호하는 언어로 즉시 번역합니다."
-            },
-            image: {
-                title: "이미지 및 스크린샷",
-                description: "이미지, 사진, 스크린샷에서 텍스트를 자동으로 추출하고 번역합니다."
-            },
-            audio: {
-                title: "음성 메시지",
-                description: "음성을 텍스트로 변환하고 오디오 메시지를 실시간으로 번역합니다."
-            },
-            forward: {
-                title: "전달된 게시물",
-                description: "채널과 그룹에서 전달된 메시지와 게시물을 원활하게 번역합니다."
-            },
-            inline: {
-                title: "인라인 모드",
-                description: "인라인 쿼리로 모든 채팅에서 VerbifyBot을 사용하세요. @verbifybot과 텍스트를 입력하여 즉시 번역합니다."
-            },
-            documents: {
-                title: "문서 번역",
-                description: "형식을 보존하여 TXT, MD, PDF, DOCX 파일을 포함한 전체 문서를 번역합니다."
-            }
-        },
-        howItWorks: {
-            title: "작동 방식",
-            description: "단 세 가지 간단한 단계로 VerbifyBot을 시작하세요",
-            step1: {
-                title: "봇 추가",
-                description: "아래 버튼을 클릭하거나 텔레그램에서 @verbifybot을 검색하여 대화를 시작하세요."
-            },
-            step2: {
-                title: "콘텐츠 보내기",
-                description: "텍스트, 이미지, 오디오를 보내거나 게시물을 봇에 전달하세요. 모든 콘텐츠 유형에서 작동합니다."
-            },
-            step3: {
-                title: "번역 받기",
-                description: "선호하는 언어로 즉시 정확한 번역을 받으세요. 정말 간단합니다!"
-            }
-        },
-        footer: {
-            product: "제품",
-            support: "지원",
-            tryNow: "지금 시도",
-            contactBot: "봇 연락",
-            emailSupport: "이메일 지원",
-            copyright: "© 2025 VerbifyBot. 모든 권리 보유."
-        }
-    },
     ar: {
+        meta: {
+            title: "VerbifyBot - بوت الترجمة الوحيد الذي تحتاجه",
+            description: "يقوم VerbifyBot بترجمة الرسائل النصية والصور والملفات الصوتية والمشاركات المعاد توجيهها في Telegram. تواصل مع أي شخص في أي مكان وبأي لغة."
+        },
         nav: {
             features: "الميزات",
             howItWorks: "كيف يعمل",
-            addToTelegram: "إضافة إلى تيليجرام"
+            addToTelegram: "إضافة إلى Telegram"
         },
         hero: {
             title: "اكسر حواجز اللغة",
             instantly: "فوراً",
             slogan: "بوت الترجمة الوحيد الذي تحتاجه",
-            description: "يترجم VerbifyBot الرسائل النصية والصور والملفات الصوتية والمنشورات المعاد توجيهها في تيليجرام. تواصل مع أي شخص، في أي مكان، بأي لغة."
+            description: "يقوم VerbifyBot بترجمة الرسائل النصية والصور والملفات الصوتية والمشاركات المعاد توجيهها في Telegram. تواصل مع أي شخص في أي مكان وبأي لغة."
         },
         cta: {
             addBot: "إضافة @verbifybot",
             learnHow: "تعلم كيف",
-            title: "مستعد لكسر حواجز اللغة؟",
-            description: "انضم إلى آلاف المستخدمين الذين يتواصلون بالفعل عبر اللغات مع VerbifyBot",
-            startUsing: "ابدأ استخدام VerbifyBot الآن"
+            title: "هل أنت مستعد لكسر حواجز اللغة؟",
+            description: "انضم إلى آلاف المستخدمين الذين يتواصلون بالفعل عبر اللغات باستخدام VerbifyBot",
+            startUsing: "ابدأ باستخدام VerbifyBot الآن"
         },
         features: {
             title: "ميزات ترجمة قوية",
             description: "يتعامل VerbifyBot مع جميع أنواع المحتوى بدقة وسرعة",
             text: {
                 title: "الرسائل النصية",
-                description: "ترجم فورية لأي رسالة نصية إلى لغتك المفضلة بدقة عالية."
+                description: "ترجم أي رسالة نصية على الفور إلى لغتك المفضلة بدقة عالية."
             },
             image: {
                 title: "الصور ولقطات الشاشة",
-                description: "استخرج وترجم النص من الصور والصور الفوتوغرافية ولقطات الشاشة تلقائياً."
+                description: "استخرج وترجم النص من الصور والصور الفوتوغرافية ولقطات الشاشة تلقائيًا."
             },
             audio: {
                 title: "الرسائل الصوتية",
@@ -719,6 +607,386 @@ const translations = {
             emailSupport: "دعم البريد الإلكتروني",
             copyright: "© 2025 VerbifyBot. جميع الحقوق محفوظة."
         }
+    },
+    tr: {
+        meta: {
+            title: "VerbifyBot - İhtiyacınız Olan Tek Telegram Çeviri Botu",
+            description: "Telegram'da metin, resim, ses ve iletilmiş gönderileri anında çevirin. VerbifyBot ile dil engellerini ortadan kaldırın."
+        },
+        nav: {
+            features: "Özellikler",
+            howItWorks: "Nasıl Çalışır",
+            addToTelegram: "Telegram'a Ekle"
+        },
+        hero: {
+            title: "Dil Engellerini Anında",
+            instantly: "Aşın",
+            slogan: "İhtiyacınız olan tek çeviri botu",
+            description: "VerbifyBot, Telegram'da metin mesajlarını, resimleri, ses dosyalarını ve iletilen gönderileri çevirir. Herkesle, her yerde, her dilde bağlantı kurun."
+        },
+        cta: {
+            addBot: "@verbifybot'u ekle",
+            learnHow: "Nasıl Çalışır?",
+            title: "Dil Engellerini Aşmaya Hazır mısınız?",
+            description: "VerbifyBot ile diller arası iletişim kuran binlerce kullanıcıya katılın.",
+            startUsing: "VerbifyBot'u Şimdi Kullanmaya Başlayın"
+        },
+        features: {
+            title: "Güçlü Çeviri Özellikleri",
+            description: "VerbifyBot, her tür içeriği hassasiyetle ve hızla işler.",
+            text: {
+                title: "Metin Mesajları",
+                description: "Tüm metin mesajlarını tercih ettiğiniz dile yüksek doğrulukla anında çevirin."
+            },
+            image: {
+                title: "Resimler ve Ekran Görüntüleri",
+                description: "Resimlerden, fotoğraflardan ve ekran görüntülerinden metni otomatik olarak çıkarın ve çevirin."
+            },
+            audio: {
+                title: "Sesli Mesajlar",
+                description: "Konuşmayı metne dönüştürün ve sesli mesajları gerçek zamanlı olarak çevirin."
+            },
+            forward: {
+                title: "İletilmiş Gönderiler",
+                description: "Kanallardan ve gruplardan iletilen mesajları ve gönderileri sorunsuzca çevirin."
+            },
+            inline: {
+                title: "Satır İçi Mod",
+                description: "Satır içi sorgularla VerbifyBot'u herhangi bir sohbette kullanın. Anında çeviri için @verbifybot ve metninizi yazmanız yeterli."
+            },
+            documents: {
+                title: "Belge Çevirisi",
+                description: "TXT, MD, PDF ve DOCX dahil tüm belgeleri formatlarını koruyarak çevirin."
+            }
+        },
+        howItWorks: {
+            title: "Nasıl Çalışır",
+            description: "Sadece üç basit adımda VerbifyBot'u kullanmaya başlayın.",
+            step1: {
+                title: "Botu Ekleyin",
+                description: "Aşağıdaki düğmeye tıklayın veya Telegram'da @verbifybot'u arayarak bir konuşma başlatın."
+            },
+            step2: {
+                title: "İçeriğinizi Gönderin",
+                description: "Herhangi bir metin, resim, ses veya bir gönderiyi bota iletin. Tüm içerik türleriyle çalışır."
+            },
+            step3: {
+                title: "Çeviriyi Alın",
+                description: "Tercih ettiğiniz dilde anında ve doğru çeviriler alın. İşte bu kadar basit!"
+            }
+        },
+        footer: {
+            product: "Ürün",
+            support: "Destek",
+            tryNow: "Şimdi Deneyin",
+            contactBot: "Botla İletişime Geçin",
+            emailSupport: "E-posta Desteği",
+            copyright: "© 2025 VerbifyBot. Tüm hakları saklıdır."
+        }
+    },
+    uk: {
+        meta: {
+            title: "VerbifyBot - Найкращий Бот для Перекладу в Telegram",
+            description: "Миттєво перекладайте текст, зображення, аудіо та переслані пости в Telegram. Подолайте мовні бар'єри з VerbifyBot."
+        },
+        nav: {
+            features: "Функції",
+            howItWorks: "Як це працює",
+            addToTelegram: "Додати в Telegram"
+        },
+        hero: {
+            title: "долайте мовні бар'єри",
+            instantly: "Миттєво",
+            slogan: "Єдиний перекладацький бот, який вам потрібен",
+            description: "VerbifyBot перекладає текстові повідомлення, зображення, аудіофайли та переслані пости в Telegram. Спілкуйтеся з ким завгодно, будь-де, будь-якою мовою."
+        },
+        cta: {
+            addBot: "Додати @verbifybot",
+            learnHow: "Дізнатись як",
+            title: "Готові долати мовні бар'єри?",
+            description: "Приєднуйтесь до тисяч користувачів, які вже спілкуються різними мовами за допомогою VerbifyBot.",
+            startUsing: "Почніть користуватися VerbifyBot зараз"
+        },
+        features: {
+            title: "Потужні можливості перекладу",
+            description: "VerbifyBot обробляє будь-які типи контенту з точністю та швидкістю.",
+            text: {
+                title: "Текстові повідомлення",
+                description: "Миттєво перекладайте будь-яке текстове повідомлення на обрану мову з високою точністю."
+            },
+            image: {
+                title: "Зображення та скріншоти",
+                description: "Автоматично витягуйте та перекладайте текст із зображень, фотографій та скріншотів."
+            },
+            audio: {
+                title: "Голосові повідомлення",
+                description: "Перетворюйте мовлення на текст і перекладайте аудіоповідомлення в реальному часі."
+            },
+            forward: {
+                title: "Переслані пости",
+                description: "Легко перекладайте переслані повідомлення та пости з каналів і груп."
+            },
+            inline: {
+                title: "Вбудований режим",
+                description: "Використовуйте VerbifyBot у будь-якому чаті за допомогою вбудованих запитів. Введіть @verbifybot та ваш текст для миттєвого перекладу."
+            },
+            documents: {
+                title: "Переклад документів",
+                description: "Перекладайте цілі документи, включаючи файли TXT, MD, PDF та DOCX, зі збереженням форматування."
+            }
+        },
+        howItWorks: {
+            title: "Як це працює",
+            description: "Почніть роботу з VerbifyBot лише за три прості кроки.",
+            step1: {
+                title: "Додайте бота",
+                description: "Натисніть кнопку нижче або знайдіть @verbifybot у Telegram та почніть розмову."
+            },
+            step2: {
+                title: "Надішліть свій контент",
+                description: "Надішліть боту будь-який текст, зображення, аудіо або перешліть пост. Він працює з усіма типами контенту."
+            },
+            step3: {
+                title: "Отримайте переклад",
+                description: "Отримуйте миттєві та точні переклади на обрану мову. Це так просто!"
+            }
+        },
+        footer: {
+            product: "Продукт",
+            support: "Підтримка",
+            tryNow: "Спробувати зараз",
+            contactBot: "Зв'язатися з ботом",
+            emailSupport: "Підтримка електронною поштою",
+            copyright: "© 2025 VerbifyBot. Всі права захищено."
+        }
+    },
+    hi: {
+        meta: {
+            title: "VerbifyBot - आपका आवश्यक टेलीग्राम अनुवाद बॉट",
+            description: "टेलीग्राम में टेक्स्ट, चित्र, ऑडियो और फॉरवर्ड किए गए पोस्ट का तुरंत अनुवाद करें। VerbifyBot के साथ भाषा की बाधाओं को तोड़ें।"
+        },
+        nav: {
+            features: "विशेषताएँ",
+            howItWorks: "यह कैसे काम करता है",
+            addToTelegram: "टेलीग्राम में जोड़ें"
+        },
+        hero: {
+            title: "भाषा की बाधाओं को",
+            instantly: "तुरंत तोड़ें",
+            slogan: "आपको बस इसी अनुवाद बॉट की आवश्यकता है",
+            description: "VerbifyBot टेलीग्राम में टेक्स्ट संदेश, चित्र, ऑडियो फ़ाइलें और फॉरवर्ड किए गए पोस्ट का अनुवाद करता है। किसी से भी, कहीं भी, किसी भी भाषा में जुड़ें।"
+        },
+        cta: {
+            addBot: "@verbifybot जोड़ें",
+            learnHow: "कैसे जानें",
+            title: "भाषा की बाधाओं को तोड़ने के लिए तैयार हैं?",
+            description: "उन हजारों उपयोगकर्ताओं से जुड़ें जो पहले से ही VerbifyBot के साथ विभिन्न भाषाओं में जुड़ रहे हैं।",
+            startUsing: "VerbifyBot का उपयोग अभी शुरू करें"
+        },
+        features: {
+            title: "शक्तिशाली अनुवाद सुविधाएँ",
+            description: "VerbifyBot सभी प्रकार की सामग्री को सटीकता और गति के साथ संभालता है।",
+            text: {
+                title: "टेक्स्ट संदेश",
+                description: "किसी भी टेक्स्ट संदेश का अपनी पसंदीदा भाषा में उच्च सटीकता के साथ तुरंत अनुवाद करें।"
+            },
+            image: {
+                title: "छवियाँ और स्क्रीनशॉट",
+                description: "छवियों, तस्वीरों और स्क्रीनशॉट से टेक्स्ट को स्वचालित रूप से निकालें और अनुवाद करें।"
+            },
+            audio: {
+                title: "वॉयस संदेश",
+                description: "भाषण को टेक्स्ट में बदलें और ऑडियो संदेशों का वास्तविक समय में अनुवाद करें।"
+            },
+            forward: {
+                title: "फॉरवर्ड किए गए पोस्ट",
+                description: "चैनलों और समूहों से फॉरवर्ड किए गए संदेशों और पोस्ट का निर्बाध रूप से अनुवाद करें।"
+            },
+            inline: {
+                title: "इनलाइन मोड",
+                description: "किसी भी चैट में इनलाइन प्रश्नों के साथ VerbifyBot का उपयोग करें। तुरंत अनुवाद करने के लिए @verbifybot और अपना टेक्स्ट टाइप करें।"
+            },
+            documents: {
+                title: "दस्तावेज़ अनुवाद",
+                description: "TXT, MD, PDF, और DOCX फ़ाइलों सहित पूरे दस्तावेज़ों का स्वरूपण संरक्षित रखते हुए अनुवाद करें।"
+            }
+        },
+        howItWorks: {
+            title: "यह कैसे काम करता है",
+            description: "बस तीन सरल चरणों में VerbifyBot के साथ आरंभ करें।",
+            step1: {
+                title: "बॉट जोड़ें",
+                description: "नीचे दिए गए बटन पर क्लिक करें या टेलीग्राम में @verbifybot खोजें और बातचीत शुरू करें।"
+            },
+            step2: {
+                title: "अपनी सामग्री भेजें",
+                description: "कोई भी टेक्स्ट, छवि, ऑडियो भेजें या बॉट को एक पोस्ट फॉरवर्ड करें। यह सभी प्रकार की सामग्री के साथ काम करता है।"
+            },
+            step3: {
+                title: "अनुवाद प्राप्त करें",
+                description: "अपनी पसंदीदा भाषा में तुरंत, सटीक अनुवाद प्राप्त करें। यह इतना आसान है!"
+            }
+        },
+        footer: {
+            product: "उत्पाद",
+            support: "समर्थन",
+            tryNow: "अभी आज़माएँ",
+            contactBot: "बॉट से संपर्क करें",
+            emailSupport: "ईमेल समर्थन",
+            copyright: "© 2025 VerbifyBot. सर्वाधिकार सुरक्षित।"
+        }
+    },
+    id: {
+        meta: {
+            title: "VerbifyBot - Bot Terjemahan Telegram yang Anda Butuhkan",
+            description: "Terjemahkan teks, gambar, audio, dan postingan yang diteruskan di Telegram secara instan. Atasi hambatan bahasa dengan VerbifyBot."
+        },
+        nav: {
+            features: "Fitur",
+            howItWorks: "Cara Kerja",
+            addToTelegram: "Tambahkan ke Telegram"
+        },
+        hero: {
+            title: "Atasi Hambatan Bahasa",
+            instantly: "Seketika",
+            slogan: "Satu-satunya bot terjemahan yang Anda butuhkan",
+            description: "VerbifyBot menerjemahkan pesan teks, gambar, file audio, dan postingan yang diteruskan di Telegram. Terhubung dengan siapa saja, di mana saja, dalam bahasa apa saja."
+        },
+        cta: {
+            addBot: "Tambahkan @verbifybot",
+            learnHow: "Pelajari Caranya",
+            title: "Siap Mengatasi Hambatan Bahasa?",
+            description: "Bergabunglah dengan ribuan pengguna yang sudah terhubung lintas bahasa dengan VerbifyBot.",
+            startUsing: "Mulai Gunakan VerbifyBot Sekarang"
+        },
+        features: {
+            title: "Fitur Terjemahan yang Kuat",
+            description: "VerbifyBot menangani semua jenis konten dengan presisi dan kecepatan.",
+            text: {
+                title: "Pesan Teks",
+                description: "Terjemahkan pesan teks apa pun secara instan ke bahasa pilihan Anda dengan akurasi tinggi."
+            },
+            image: {
+                title: "Gambar & Tangkapan Layar",
+                description: "Ekstrak dan terjemahkan teks dari gambar, foto, dan tangkapan layar secara otomatis."
+            },
+            audio: {
+                title: "Pesan Suara",
+                description: "Ubah ucapan menjadi teks dan terjemahkan pesan audio secara real-time."
+            },
+            forward: {
+                title: "Postingan yang Diteruskan",
+                description: "Terjemahkan pesan dan postingan yang diteruskan dari saluran dan grup dengan lancar."
+            },
+            inline: {
+                title: "Mode Inline",
+                description: "Gunakan VerbifyBot di obrolan apa pun dengan kueri inline. Ketik @verbifybot dan teks Anda untuk terjemahan instan."
+            },
+            documents: {
+                title: "Terjemahan Dokumen",
+                description: "Terjemahkan seluruh dokumen termasuk file TXT, MD, PDF, dan DOCX dengan format yang tetap terjaga."
+            }
+        },
+        howItWorks: {
+            title: "Cara Kerja",
+            description: "Mulai dengan VerbifyBot hanya dalam tiga langkah mudah.",
+            step1: {
+                title: "Tambahkan Bot",
+                description: "Klik tombol di bawah atau cari @verbifybot di Telegram dan mulai percakapan."
+            },
+            step2: {
+                title: "Kirim Konten Anda",
+                description: "Kirim teks, gambar, audio, atau teruskan postingan apa pun ke bot. Ini berfungsi dengan semua jenis konten."
+            },
+            step3: {
+                title: "Dapatkan Terjemahan",
+                description: "Terima terjemahan instan yang akurat dalam bahasa pilihan Anda. Semudah itu!"
+            }
+        },
+        footer: {
+            product: "Produk",
+            support: "Dukungan",
+            tryNow: "Coba Sekarang",
+            contactBot: "Hubungi Bot",
+            emailSupport: "Dukungan Email",
+            copyright: "© 2025 VerbifyBot. Hak cipta dilindungi undang-undang."
+        }
+    },
+    ms: {
+        meta: {
+            title: "VerbifyBot - Bot Terjemahan Telegram Penting Anda",
+            description: "Terjemahkan teks, imej, audio dan siaran yang dimajukan di Telegram serta-merta. Atasi halangan bahasa dengan VerbifyBot."
+        },
+        nav: {
+            features: "Ciri-ciri",
+            howItWorks: "Cara Berfungsi",
+            addToTelegram: "Tambah ke Telegram"
+        },
+        hero: {
+            title: "Atasi Halangan Bahasa",
+            instantly: "Serta-merta",
+            slogan: "Satu-satunya bot terjemahan yang anda perlukan",
+            description: "VerbifyBot menterjemah mesej teks, imej, fail audio dan siaran yang dimajukan di Telegram. Berhubung dengan sesiapa sahaja, di mana-mana sahaja, dalam sebarang bahasa."
+        },
+        cta: {
+            addBot: "Tambah @verbifybot",
+            learnHow: "Ketahui Caranya",
+            title: "Bersedia Mengatasi Halangan Bahasa?",
+            description: "Sertai ribuan pengguna yang sudah berhubung merentasi bahasa dengan VerbifyBot.",
+            startUsing: "Mula Gunakan VerbifyBot Sekarang"
+        },
+        features: {
+            title: "Ciri Terjemahan Hebat",
+            description: "VerbifyBot mengendalikan semua jenis kandungan dengan tepat dan pantas.",
+            text: {
+                title: "Mesej Teks",
+                description: "Terjemah sebarang mesej teks ke bahasa pilihan anda dengan serta-merta dan berketepatan tinggi."
+            },
+            image: {
+                title: "Imej & Tangkapan Skrin",
+                description: "Ekstrak dan terjemah teks daripada imej, foto dan tangkapan skrin secara automatik."
+            },
+            audio: {
+                title: "Mesej Suara",
+                description: "Tukar pertuturan kepada teks dan terjemah mesej audio dalam masa nyata."
+            },
+            forward: {
+                title: "Siaran yang Dimajukan",
+                description: "Terjemah mesej dan siaran yang dimajukan dari saluran dan kumpulan dengan lancar."
+            },
+            inline: {
+                title: "Mod Sebaris",
+                description: "Gunakan VerbifyBot dalam mana-mana sembang dengan pertanyaan sebaris. Taip @verbifybot dan teks anda untuk menterjemah serta-merta."
+            },
+            documents: {
+                title: "Terjemahan Dokumen",
+                description: "Terjemah keseluruhan dokumen termasuk fail TXT, MD, PDF dan DOCX dengan pemformatan yang dikekalkan."
+            }
+        },
+        howItWorks: {
+            title: "Cara Berfungsi",
+            description: "Mulakan dengan VerbifyBot hanya dalam tiga langkah mudah.",
+            step1: {
+                title: "Tambah Bot",
+                description: "Klik butang di bawah atau cari @verbifybot di Telegram dan mulakan perbualan."
+            },
+            step2: {
+                title: "Hantar Kandungan Anda",
+                description: "Hantar sebarang teks, imej, audio atau majukan siaran kepada bot. Ia berfungsi dengan semua jenis kandungan."
+            },
+            step3: {
+                title: "Dapatkan Terjemahan",
+                description: "Terima terjemahan segera dan tepat dalam bahasa pilihan anda. Semudah itu!"
+            }
+        },
+        footer: {
+            product: "Produk",
+            support: "Sokongan",
+            tryNow: "Cuba Sekarang",
+            contactBot: "Hubungi Bot",
+            emailSupport: "Sokongan E-mel",
+            copyright: "© 2025 VerbifyBot. Hak cipta terpelihara."
+        }
     }
 };
 
@@ -731,9 +999,12 @@ const languageCodes = {
     it: 'IT',
     pt: 'PT',
     ru: 'RU',
-    ja: 'JA',
-    ko: 'KO',
-    ar: 'AR'
+    ar: 'AR',
+    tr: "TR",
+    uk: "UK",
+    hi: "HI",
+    id: "ID",
+    ms: "MS"
 };
 
 // Export for use in other files

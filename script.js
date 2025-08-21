@@ -264,8 +264,10 @@ function updateMetaTags(lang) {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize language
+    const urlParams = new URLSearchParams(window.location.search);
+    const langFromUrl = urlParams.get('lang');
     const savedLanguage = localStorage.getItem('verbifybot-language');
-    const initialLanguage = savedLanguage || detectLanguage();
+    const initialLanguage = langFromUrl || savedLanguage || detectLanguage();
     
     // Track auto-detected language if different from saved
     if (!savedLanguage && initialLanguage !== 'en') {
@@ -300,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
             option.addEventListener('click', function(e) {
                 e.stopPropagation();
                 const selectedLang = this.getAttribute('data-lang');
-                updateContent(selectedLang);
+                updateContent(selectedLang); //!!! window.location.href = `/?lang=${selectedLang}`;
                 languageToggle.classList.remove('active');
                 languageDropdown.classList.remove('active');
                 

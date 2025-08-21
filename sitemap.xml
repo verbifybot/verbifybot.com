@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
     
     <!-- Homepage -->
     <url>
         <loc>https://verbifybot.com/</loc>
-        <lastmod>2025-08-14</lastmod>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://verbifybot.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verbifybot.com/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://verbifybot.com/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://verbifybot.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://verbifybot.com/de/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://verbifybot.com/it/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://verbifybot.com/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://verbifybot.com/ru/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://verbifybot.com/ar/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://verbifybot.com/tr/"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://verbifybot.com/uk/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://verbifybot.com/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://verbifybot.com/id/"/>
+        <xhtml:link rel="alternate" hreflang="ms" href="https://verbifybot.com/ms/"/>
+        <lastmod>2025-08-21</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,7 +30,7 @@
     <!-- Features Section -->
     <url>
         <loc>https://verbifybot.com/#features</loc>
-        <lastmod>2025-08-14</lastmod>
+        <lastmod>2025-08-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -23,7 +38,7 @@
     <!-- How It Works Section -->
     <url>
         <loc>https://verbifybot.com/#how-it-works</loc>
-        <lastmod>2025-08-14</lastmod>
+        <lastmod>2025-08-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
