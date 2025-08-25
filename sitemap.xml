@@ -22,7 +22,8 @@
         <xhtml:link rel="alternate" hreflang="hi" href="https://verbifybot.com/hi/"/>
         <xhtml:link rel="alternate" hreflang="id" href="https://verbifybot.com/id/"/>
         <xhtml:link rel="alternate" hreflang="ms" href="https://verbifybot.com/ms/"/>
-        <lastmod>2025-08-21</lastmod>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://verbifybot.com/zh/"/>
+        <lastmod>2025-08-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>

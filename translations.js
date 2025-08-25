@@ -987,6 +987,82 @@ const translations = {
             emailSupport: "Sokongan E-mel",
             copyright: "© 2025 VerbifyBot. Hak cipta terpelihara."
         }
+    },
+    zh: {
+        meta: {
+            title: "VerbifyBot - 您唯一需要的翻译机器人",
+            description: "VerbifyBot翻译Telegram中的文本消息、图片、音频文件和转发帖子。与任何人、任何地方、任何语言进行连接。"
+        },
+        nav: {
+            features: "功能",
+            howItWorks: "工作原理",
+            addToTelegram: "添加到Telegram"
+        },
+        hero: {
+            title: "打破语言障碍",
+            instantly: "即时",
+            slogan: "您唯一需要的翻译机器人",
+            description: "VerbifyBot翻译Telegram中的文本消息、图片、音频文件和转发帖子。与任何人、任何地方、任何语言进行连接。"
+        },
+        cta: {
+            addBot: "添加@verbifybot",
+            learnHow: "了解如何",
+            title: "准备好打破语言障碍了吗？",
+            description: "加入成千上万已经通过VerbifyBot跨语言连接的用户",
+            startUsing: "立即开始使用VerbifyBot"
+        },
+        features: {
+            title: "强大的翻译功能",
+            description: "VerbifyBot以精确和速度处理所有类型的内容",
+            text: {
+                title: "文本消息",
+                description: "以高精度即时将任何文本消息翻译成您偏好的语言。"
+            },
+            image: {
+                title: "图片和截图",
+                description: "自动从图片、照片和截图中提取并翻译文本。"
+            },
+            audio: {
+                title: "语音消息",
+                description: "将语音转换为文本并实时翻译音频消息。"
+            },
+            forward: {
+                title: "转发帖子",
+                description: "无缝翻译来自频道和群的转发消息和帖子。"
+            },
+            inline: {
+                title: "内联模式",
+                description: "在任何聊天中使用VerbifyBot的内联查询。输入@verbifybot和您的文本即可即时翻译。"
+            },
+            documents: {
+                title: "文档翻译",
+                description: "翻译包括TXT、MD、PDF和DOCX文件在内的完整文档，保留格式。"
+            }
+        },
+        howItWorks: {
+            title: "工作原理",
+            description: "只需三个简单步骤即可开始使用VerbifyBot",
+            step1: {
+                title: "添加机器人",
+                description: "点击下方按钮或在Telegram中搜索@verbifybot并开始对话。"
+            },
+            step2: {
+                title: "发送您的内容",
+                description: "向机器人发送任何文本、图片、音频或转发帖子。适用于所有内容类型。"
+            },
+            step3: {
+                title: "获得翻译",
+                description: "以您偏好的语言接收即时、准确的翻译。就是这么简单！"
+            }
+        },
+        footer: {
+            product: "产品",
+            support: "支持",
+            tryNow: "立即试用",
+            contactBot: "联系机器人",
+            emailSupport: "邮件支持",
+            copyright: "© 2025 VerbifyBot。保留所有权利。"
+        }
     }
 };
 
@@ -1004,7 +1080,8 @@ const languageCodes = {
     uk: "UK",
     hi: "HI",
     id: "ID",
-    ms: "MS"
+    ms: "MS",
+    zh: "ZH",
 };
 
 // Export for use in other files
