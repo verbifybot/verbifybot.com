@@ -1068,20 +1068,20 @@ const translations = {
 
 // Language codes mapping
 const languageCodes = {
-    en: 'EN',
-    es: 'ES',
-    fr: 'FR',
-    de: 'DE',
-    it: 'IT',
-    pt: 'PT',
-    ru: 'RU',
-    ar: 'AR',
-    tr: "TR",
-    uk: "UK",
-    hi: "HI",
-    id: "ID",
-    ms: "MS",
-    zh: "ZH",
+    en: '🇺🇸 English',
+    es: '🇪🇸 Español',
+    fr: '🇫🇷 Français',
+    de: '🇩🇪 Deutsch',
+    it: '🇮🇹 Italiano',
+    pt: '🇵🇹 Português',
+    ru: '🇷🇺 Русский',
+    ar: '🇸🇦 العربية',
+    tr: '🇹🇷 Türkçe',
+    uk: '🇺🇦 Українська',
+    hi: '🇮🇳 हिन्दी',
+    id: '🇮🇩 Bahasa Indonesia',
+    ms: '🇲🇾 Bahasa Melayu',
+    zh: '🇹🇼 中文'
 };
 
 // Export for use in other files
