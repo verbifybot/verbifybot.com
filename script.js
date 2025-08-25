@@ -191,7 +191,7 @@ function updateContent(lang) {
     // Update current language display
     const currentLangElement = document.querySelector('.current-lang');
     if (currentLangElement && languageCodes[lang]) {
-        currentLangElement.textContent = languageCodes[lang];
+        currentLangElement.innerHTML = languageCodes[lang];
     }
     
     // Update active language option
@@ -281,7 +281,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Language switcher functionality
     const languageToggle = document.querySelector('.language-toggle');
-    const languageDropdown = document.querySelector('.language-dropdown');
+    const languageDropdown = document.getElementById('language-dropdown'); // Use ID for dropdown
+
+    // Dynamically populate language dropdown
+    if (languageDropdown && typeof languageCodes !== 'undefined') {
+        for (const langCode in languageCodes) {
+            if (languageCodes.hasOwnProperty(langCode)) {
+                const button = document.createElement('button');
+                button.classList.add('lang-option');
+                button.setAttribute('data-lang', langCode);
+                button.innerHTML = languageCodes[langCode];
+                languageDropdown.appendChild(button);
+            }
+        }
+    }
     const langOptions = document.querySelectorAll('.lang-option');
     
     if (languageToggle && languageDropdown) {

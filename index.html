@@ -43,9 +43,9 @@
     <title>VerbifyBot - The Only Translation Bot You Need</title>
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="flag-icons.min.css">
+    <!-- https://github.com/lipis/flag-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap&text=🇺🇸🇪🇸🇫🇷🇩🇪🇮🇹🇵🇹🇷🇺🇸🇦🇹🇷🇺🇦🇮🇳🇮🇩🇲🇾🇹🇼" rel="stylesheet">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-066XGVT1R2"></script>
@@ -83,21 +83,8 @@
                                 <path d="M7 10l5 5 5-5z"/>
                             </svg>
                         </button>
-                        <div class="language-dropdown">
-                            <button class="lang-option" data-lang="en">🇺🇸 English</button>
-                            <button class="lang-option" data-lang="es">🇪🇸 Español</button>
-                            <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
-                            <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
-                            <button class="lang-option" data-lang="it">🇮🇹 Italiano</button>
-                            <button class="lang-option" data-lang="pt">🇵🇹 Português</button>
-                            <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
-                            <button class="lang-option" data-lang="ar">🇸🇦 العربية</button>
-                            <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
-                            <button class="lang-option" data-lang="uk">🇺🇦 Українська</button>
-                            <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
-                            <button class="lang-option" data-lang="id">🇮🇩 Bahasa Indonesia</button>
-                            <button class="lang-option" data-lang="ms">🇲🇾 Bahasa Melayu</button>
-                            <button class="lang-option" data-lang="zh">🇹🇼 中文</button>
+                        <div class="language-dropdown" id="language-dropdown">
+                            <!-- Language options will be dynamically loaded here by script.js -->
                         </div>
                     </div>
                 </div>

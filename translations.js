@@ -991,29 +991,29 @@ const translations = {
     zh: {
         meta: {
             title: "VerbifyBot - 您唯一需要的翻译机器人",
-            description: "VerbifyBot翻译Telegram中的文本消息、图片、音频文件和转发帖子。与任何人、任何地方、任何语言进行连接。"
+            description: "VerbifyBot 翻译 Telegram 中的文本消息、图片、音频文件和转发帖子。与任何人、任何地方、任何语言进行连接。"
         },
         nav: {
             features: "功能",
             howItWorks: "工作原理",
-            addToTelegram: "添加到Telegram"
+            addToTelegram: "添加到 Telegram"
         },
         hero: {
             title: "打破语言障碍",
             instantly: "即时",
             slogan: "您唯一需要的翻译机器人",
-            description: "VerbifyBot翻译Telegram中的文本消息、图片、音频文件和转发帖子。与任何人、任何地方、任何语言进行连接。"
+            description: "VerbifyBot 翻译 Telegram 中的文本消息、图片、音频文件和转发帖子。与任何人、任何地方、任何语言进行连接。"
         },
         cta: {
-            addBot: "添加@verbifybot",
+            addBot: "添加 @verbifybot",
             learnHow: "了解如何",
             title: "准备好打破语言障碍了吗？",
-            description: "加入成千上万已经通过VerbifyBot跨语言连接的用户",
-            startUsing: "立即开始使用VerbifyBot"
+            description: "加入成千上万已经通过 VerbifyBot 跨语言连接的用户",
+            startUsing: "立即开始使用 VerbifyBot"
         },
         features: {
             title: "强大的翻译功能",
-            description: "VerbifyBot以精确和速度处理所有类型的内容",
+            description: "VerbifyBot 以精确和速度处理所有类型的内容",
             text: {
                 title: "文本消息",
                 description: "以高精度即时将任何文本消息翻译成您偏好的语言。"
@@ -1032,19 +1032,19 @@ const translations = {
             },
             inline: {
                 title: "内联模式",
-                description: "在任何聊天中使用VerbifyBot的内联查询。输入@verbifybot和您的文本即可即时翻译。"
+                description: "在任何聊天中使用 VerbifyBot 的内联查询。输入@verbifybot和您的文本即可即时翻译。"
             },
             documents: {
                 title: "文档翻译",
-                description: "翻译包括TXT、MD、PDF和DOCX文件在内的完整文档，保留格式。"
+                description: "翻译包括 TXT、MD、PDF 和 DOCX 文件在内的完整文档，保留格式。"
             }
         },
         howItWorks: {
             title: "工作原理",
-            description: "只需三个简单步骤即可开始使用VerbifyBot",
+            description: "只需三个简单步骤即可开始使用 VerbifyBot",
             step1: {
                 title: "添加机器人",
-                description: "点击下方按钮或在Telegram中搜索@verbifybot并开始对话。"
+                description: "点击下方按钮或在 Telegram 中搜索 @verbifybot 并开始对话。"
             },
             step2: {
                 title: "发送您的内容",
@@ -1068,20 +1068,20 @@ const translations = {
 
 // Language codes mapping
 const languageCodes = {
-    en: '🇺🇸 English',
-    es: '🇪🇸 Español',
-    fr: '🇫🇷 Français',
-    de: '🇩🇪 Deutsch',
-    it: '🇮🇹 Italiano',
-    pt: '🇵🇹 Português',
-    ru: '🇷🇺 Русский',
-    ar: '🇸🇦 العربية',
-    tr: '🇹🇷 Türkçe',
-    uk: '🇺🇦 Українська',
-    hi: '🇮🇳 हिन्दी',
-    id: '🇮🇩 Bahasa Indonesia',
-    ms: '🇲🇾 Bahasa Melayu',
-    zh: '🇹🇼 中文'
+    en: '<span class="fi fi-us"></span> English',
+    es: '<span class="fi fi-es"></span> Español',
+    fr: '<span class="fi fi-fr"></span> Français',
+    de: '<span class="fi fi-de"></span> Deutsch',
+    it: '<span class="fi fi-it"></span> Italiano',
+    pt: '<span class="fi fi-br"></span> Português',
+    ru: '<span class="fi fi-ru"></span> Русский',
+    ar: '<span class="fi fi-sa"></span> العربية',
+    tr: '<span class="fi fi-tr"></span> Türkçe',
+    uk: '<span class="fi fi-ua"></span> Українська',
+    hi: '<span class="fi fi-in"></span> हिन्दी',
+    id: '<span class="fi fi-id"></span> Bahasa Indonesia',
+    ms: '<span class="fi fi-my"></span> Bahasa Melayu',
+    zh: '<span class="fi fi-cn"></span> 中文'
 };
 
 // Export for use in other files
